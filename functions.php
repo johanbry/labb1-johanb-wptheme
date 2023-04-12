@@ -130,3 +130,17 @@ function johanb_register_sidebars()
 
 // Koppla registrering av sidebars till hook
 add_action('widgets_init', 'johanb_register_sidebars');
+
+// Change the pagination markup to match with css rules
+function johanb_pagination_output($template)
+{
+
+    $template = '
+	<nav class="navigation %1$s" aria-label="%4$s">
+    <h2 class="screen-reader-text">%2$s</h2>
+    %3$s</nav>';
+
+    return $template;
+}
+
+add_filter('navigation_markup_template', 'johanb_pagination_output', 99, 2);
