@@ -62,10 +62,10 @@ function johanb_register_sidebars()
             'id'            => 'footer-section-1',
             'name'          => __('Footer first section'),
             'description'   => __('First section/column in the footer.'),
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '<h3 class="widget-title">',
-            'after_title'   => '</h3>',
+            'before_widget' => '',
+            'after_widget'  => '',
+            'before_title'  => '',
+            'after_title'   => '',
         )
     );
 
@@ -74,10 +74,10 @@ function johanb_register_sidebars()
             'id'            => 'footer-section-2',
             'name'          => __('Footer second section'),
             'description'   => __('Second section/column in the footer.'),
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '<h3 class="widget-title">',
-            'after_title'   => '</h3>',
+            'before_widget' => '',
+            'after_widget'  => '',
+            'before_title'  => '',
+            'after_title'   => '',
         )
     );
 
@@ -86,10 +86,22 @@ function johanb_register_sidebars()
             'id'            => 'footer-section-3',
             'name'          => __('Footer third section'),
             'description'   => __('Third section/column in the footer.'),
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '<h3 class="widget-title">',
-            'after_title'   => '</h3>',
+            'before_widget' => '',
+            'after_widget'  => '',
+            'before_title'  => '',
+            'after_title'   => '',
+        )
+    );
+
+    register_sidebar(
+        array(
+            'id'            => 'footer-section-4',
+            'name'          => __('Footer fourth section'),
+            'description'   => __('Fourth section/bottom row in the footer.'),
+            'before_widget' => '',
+            'after_widget'  => '',
+            'before_title'  => '',
+            'after_title'   => '',
         )
     );
 }
