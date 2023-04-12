@@ -63,6 +63,18 @@ function johanb_add_scripts()
 // Koppla funktion för att lägga till scripts till hook
 add_action('wp_enqueue_scripts', 'johanb_add_scripts');
 
+// Registrera menyer
+function johanb_register_menus()
+{
+    register_nav_menus(
+        array(
+            'header-menu' => __('Header menu')
+        )
+    );
+}
+
+add_action('init', 'johanb_register_menus');
+
 // Registrera sidebars
 function johanb_register_sidebars()
 {
