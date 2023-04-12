@@ -53,3 +53,46 @@ function johanb_add_scripts()
 
 // Koppla funktion för att lägga till scripts till hook
 add_action('wp_enqueue_scripts', 'johanb_add_scripts');
+
+// Registrera sidebars
+function johanb_register_sidebars()
+{
+    register_sidebar(
+        array(
+            'id'            => 'footer-section-1',
+            'name'          => __('Footer first section'),
+            'description'   => __('First section/column in the footer.'),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+
+    register_sidebar(
+        array(
+            'id'            => 'footer-section-2',
+            'name'          => __('Footer second section'),
+            'description'   => __('Second section/column in the footer.'),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+
+    register_sidebar(
+        array(
+            'id'            => 'footer-section-3',
+            'name'          => __('Footer third section'),
+            'description'   => __('Third section/column in the footer.'),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+}
+
+// Koppla registrering av sidebars till hook
+add_action('widgets_init', 'johanb_register_sidebars');
