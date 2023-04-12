@@ -7,7 +7,7 @@ function johanb_theme_setup()
     add_theme_support('post-thumbnails');
 }
 
-add_action('after_setup_theme', 'my_theme_setup');
+add_action('after_setup_theme', 'johanb_theme_setup');
 
 // Lägg till alla stylesheets
 function johanb_add_styles()
