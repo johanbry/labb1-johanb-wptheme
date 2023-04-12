@@ -16,7 +16,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-8 col-sm-6">
-                        <a class="logo" href="index.html">Labb 1</a>
+                        <a href="<?php echo get_home_url();  ?>" class="logo">
+                            <?php
+                            $custom_logo_id = get_theme_mod('custom_logo');
+                            $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+                            if (has_custom_logo()) {
+                                echo '<img src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '">';
+                            } else {
+                                echo get_bloginfo('name');
+                            }
+                            ?>
+                        </a>
                     </div>
                     <div class="col-sm-6 hidden-xs">
                         <form id="searchform" class="searchform">
