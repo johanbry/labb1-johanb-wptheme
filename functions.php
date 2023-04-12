@@ -68,7 +68,8 @@ function johanb_register_menus()
 {
     register_nav_menus(
         array(
-            'header-menu' => __('Header menu')
+            'header-menu' => __('Header menu'),
+            'aside-menu' => __('Aside menu')
         )
     );
 }
