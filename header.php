@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <title>Labb 1</title>
 
-    <?php wp_head() ?>
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -20,11 +20,7 @@
                     </div>
                     <div class="col-sm-6 hidden-xs">
                         <form id="searchform" class="searchform">
-                            <div>
-                                <label class="screen-reader-text">Sök efter:</label>
-                                <input type="text" />
-                                <input type="submit" value="Sök" />
-                            </div>
+                            <?php get_search_form(); ?>
                         </form>
                     </div>
                     <div class="col-xs-4 text-right visible-xs">
@@ -39,11 +35,7 @@
 
         <div class="mobile-search">
             <form id="searchform" class="searchform">
-                <div>
-                    <label class="screen-reader-text">Sök efter:</label>
-                    <input type="text" />
-                    <input type="submit" value="Sök" />
-                </div>
+                <?php get_search_form(); ?>
             </form>
         </div>
 
