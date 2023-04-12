@@ -51,29 +51,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <ul class="menu">
-                            <li>
-                                <a href="index.html">Hem</a>
-                            </li>
-                            <li class="current-menu-item">
-                                <a href="blogg.html">Blogg</a>
-                            </li>
-                            <li>
-                                <a href="undersida.html">Undersida</a>
-                            </li>
-                            <li>
-                                <a href="undersida2.html">Undersida 2</a>
-                            </li>
-                            <li>
-                                <a href="undersida3.html">Undersida 3</a>
-                            </li>
-                            <li>
-                                <a href="undersida4.html">Undersida 4</a>
-                            </li>
-                            <li>
-                                <a href="kontakt.html">Kontakt</a>
-                            </li>
-                        </ul>
+                        <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
                     </div>
                 </div>
             </div>
