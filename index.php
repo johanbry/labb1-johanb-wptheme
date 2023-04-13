@@ -12,7 +12,7 @@
                                     the_post();
                             ?>
 		                            <article>
-		                                <?php the_post_thumbnail('large'); ?>
+		                                <img src="<?php the_post_thumbnail_url('large'); ?>">
 		                                <h2>
 		                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 		                                </h2>
