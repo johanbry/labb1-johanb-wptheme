@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Labb 1</title>
+    <title><?= get_bloginfo(); ?></title>
 
     <?php wp_head(); ?>
 </head>
