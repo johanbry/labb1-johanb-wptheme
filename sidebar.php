@@ -1,9 +1,7 @@
 <div id="sidebar">
     <ul>
         <li>
-            <form id="searchform" class="searchform">
-                <?php get_search_form(); ?>
-            </form>
+            <?php get_search_form(); ?>
         </li>
     </ul>
     <ul role="navigation">

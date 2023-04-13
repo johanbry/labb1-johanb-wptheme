@@ -29,9 +29,7 @@
                         </a>
                     </div>
                     <div class="col-sm-6 hidden-xs">
-                        <form id="searchform" class="searchform">
-                            <?php get_search_form(); ?>
-                        </form>
+                        <?php get_search_form(); ?>
                     </div>
                     <div class="col-xs-4 text-right visible-xs">
                         <div class="mobile-menu-wrap">
