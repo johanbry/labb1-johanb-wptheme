@@ -11,7 +11,7 @@
                             the_post();
                     ?>
                             <div class="hero">
-                                <?php the_post_thumbnail('full'); ?>
+                                <img src="<?php the_post_thumbnail_url('full'); ?>">
                                 <div class="text">
                                     <?php the_content(); ?>
                                 </div>
