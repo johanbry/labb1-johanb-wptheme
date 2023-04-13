@@ -1,5 +1,21 @@
 <?php
 
+// Formatera rubrik till archive
+function get_archive_title()
+{
+    $title = wp_title('', false);
+
+    if (is_year()) {
+        $title  = get_the_date(_x('Y', 'yearly archives date format'));
+    } elseif (is_month()) {
+        $title  = get_the_date(_x('F Y', 'monthly archives date format'));
+        $title = ucfirst($title);
+    } elseif (is_day()) {
+        $title  = get_the_date(_x('F j, Y', 'daily archives date format'));
+    }
+    return 'Arkiv: ' . $title;
+}
+
 // Lägg till temasupport för olika funktioner
 function johanb_theme_setup()
 {
