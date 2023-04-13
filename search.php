@@ -13,6 +13,8 @@
                                     the_post();
                                     get_template_part('template-parts/content', 'excerpt');
                                 }
+                            } else {
+                                echo 'Sökningen gav inget resultat';
                             }
                             the_posts_pagination(); ?>
 		                </div>
