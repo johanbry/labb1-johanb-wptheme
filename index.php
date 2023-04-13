@@ -21,7 +21,7 @@
 		                                        <i class="fa fa-calendar"></i><?php the_time('j F, Y'); ?>
 		                                    </li>
 		                                    <li>
-		                                        <i class="fa fa-user"></i> <a href="forfattare.html"><?php the_author_posts_link(); ?></a>
+		                                        <i class="fa fa-user"></i> <?php the_author_posts_link(); ?>
 		                                    </li>
 		                                    <li>
 		                                        <i class="fa fa-tag"></i> <?php the_category(', '); ?>
