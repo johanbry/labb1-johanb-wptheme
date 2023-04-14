@@ -100,8 +100,8 @@ function johanb_register_sidebars()
             'id'            => 'aside-section-1',
             'name'          => __('Aside sidebar first section'),
             'description'   => __('First section in the sidebar.'),
-            'before_widget' => '',
-            'after_widget'  => '',
+            'before_widget' => '<ul><li>',
+            'after_widget'  => '</li></ul>',
             'before_title'  => '',
             'after_title'   => '',
         )
@@ -122,6 +122,17 @@ function johanb_register_sidebars()
             'id'            => 'aside-section-3',
             'name'          => __('Aside sidebar third section'),
             'description'   => __('Third section in the sidebar.'),
+            'before_widget' => '',
+            'after_widget'  => '',
+            'before_title'  => '',
+            'after_title'   => '',
+        )
+    );
+    register_sidebar(
+        array(
+            'id'            => 'aside-section-4',
+            'name'          => __('Aside sidebar fourth section'),
+            'description'   => __('Fourth section in the sidebar.'),
             'before_widget' => '',
             'after_widget'  => '',
             'before_title'  => '',
