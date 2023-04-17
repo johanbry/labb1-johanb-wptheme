@@ -16,6 +16,7 @@
                     ?>
                 </div>
                 <aside id="secondary" class="col-xs-12 col-md-3 col-md-pull-9">
+                    <?php /* Definiera visningsplats aside-menu. */  ?>
                     <?php wp_nav_menu(array('theme_location' => 'aside-menu', 'menu_class' => 'side-menu', 'items_wrap' => '<ul class="%2$s">%3$s</ul>', 'container' => '')); ?>
                 </aside>
             </div>

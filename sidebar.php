@@ -1,4 +1,5 @@
 <div id="sidebar">
+    <?php /* Definiera widgetsområden i sidebar. */  ?>
     <?php dynamic_sidebar('aside-section-1'); ?>
     <ul role="navigation">
         <li class="pagenav">

@@ -16,7 +16,8 @@
                     ?>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-6">
-                    <img src="<?php the_post_thumbnail_url('medium_large'); ?>">
+                    <?php /* Hämta utvald bild-url och skapa img-element. */  ?>
+                    <img src="<?php the_post_thumbnail_url('large'); ?>">
                 </div>
             </div>
         </div>

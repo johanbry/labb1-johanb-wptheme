@@ -16,6 +16,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-8 col-sm-6">
+                        <?php
+                        /* Använd custom logo feature som gör att man i admin kan lägga in logo. Om ingen logo är inlagd visas sajtens namn med länk till startsidan.*/
+                        ?>
                         <a href="<?php echo get_home_url();  ?>" class="logo">
                             <?php
                             $custom_logo_id = get_theme_mod('custom_logo');
@@ -29,6 +32,7 @@
                         </a>
                     </div>
                     <div class="col-sm-6 hidden-xs">
+                        <?php /* Skriv ut Wordpress default sökformulär */  ?>
                         <?php get_search_form(); ?>
                     </div>
                     <div class="col-xs-4 text-right visible-xs">
@@ -51,6 +55,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
+                        <?php /* Definiera var header-menu placering. */ ?>
                         <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
                     </div>
                 </div>

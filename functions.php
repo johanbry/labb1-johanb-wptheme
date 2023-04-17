@@ -79,7 +79,7 @@ function johanb_add_scripts()
 // Koppla funktion för att lägga till scripts till hook
 add_action('wp_enqueue_scripts', 'johanb_add_scripts');
 
-// Registrera menyer
+// Registrera visningsplatser för menyer
 function johanb_register_menus()
 {
     register_nav_menus(
@@ -90,9 +90,10 @@ function johanb_register_menus()
     );
 }
 
+// Koppla funktion för att registrera menyer till hook
 add_action('after_setup_theme', 'johanb_register_menus');
 
-// Registrera sidebars
+// Registrera områden för widgets
 function johanb_register_sidebars()
 {
     register_sidebar(
@@ -188,13 +189,12 @@ function johanb_register_sidebars()
     );
 }
 
-// Koppla registrering av sidebars till hook
+// Koppla registrering av widget-områden till hook
 add_action('widgets_init', 'johanb_register_sidebars');
 
-// Change the pagination markup to match with css rules
+// Filter för att korrigera html-kod för paginering för att matcha css-regler
 function johanb_pagination_output($template)
 {
-
     $template = '
 	<nav class="navigation %1$s" aria-label="%4$s">
     <h2 class="screen-reader-text">%2$s</h2>
@@ -203,4 +203,5 @@ function johanb_pagination_output($template)
     return $template;
 }
 
+// Koppla filter till hook
 add_filter('navigation_markup_template', 'johanb_pagination_output', 99, 2);
