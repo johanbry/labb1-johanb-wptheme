@@ -90,7 +90,7 @@ function johanb_register_menus()
     );
 }
 
-add_action('init', 'johanb_register_menus');
+add_action('after_setup_theme', 'johanb_register_menus');
 
 // Registrera sidebars
 function johanb_register_sidebars()
